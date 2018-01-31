@@ -11,3 +11,8 @@
 * [Routing After a Request](module8.md)
 * [Log In page Challenge](module9.md)
 * [Building the Note Index page](module10.md)
+* [Creating Note C.r.u.d. — Create](module11.md)
+* [Creating Note c.R.u.d. — Read](module12.md)
+* [Creating Note c.r.U.d. — Update](module13.md)
+* [Creating Note c.r.u.D. — Delete](module14.md)
+* [Protecting our views with Guards](module15.md)

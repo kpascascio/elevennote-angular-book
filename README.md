@@ -1,3 +1,6 @@
+<!-- ![alt text](./images/efalogo.png =250x) -->
+<img src="./images/efalogo.png" style="width: 400px;"/>
+
 # Intro to Angular with C# WEB API 
 
 #### An Extension of ElevenNote
