@@ -20,7 +20,7 @@ It’s nice to store some information about our user at this point. We have a wa
 
 Like in the header after they login…
 
-With our WebAPI, there is an endpoint for **UserInfo**, that returns us the current information of our user based on the **Token** that is applied to the header of the request. To see what the endpoint and requirements of it visit [here](http://kcpelevennoteapie.azurewebsites.net/swagger/ui/index#!/Account/Account_GetUserInfo).
+With our WebAPI, there is an endpoint for **UserInfo**, that returns us the current information of our user based on the **Token** that is applied to the header of the request. To see what the endpoint and requirements of it visit [here](https://kcpelevennote.azurewebsites.net/swagger/ui/index#!/Account/Account_GetUserInfo).
 
 For us to make a call we need to grab that token that we saved to the browser's **localStorage** and include it in the **Authorization** property of the request. To read more about the Auth header property read here.
 
@@ -88,7 +88,7 @@ Then in our **login\(\)** method we will send data to the subject by passing in 
 
 Finally let’s handle logging out of our application. We are going to start by creating a **logout\(\)** method
 
-Our **WebAPI** comes packed with a logout endpoint, so we want to use that in our **logout\(\)** method, read more about it [here](http://kcpelevennoteapie.azurewebsites.net/swagger/ui/index#!/Account/Account_Logout).
+Our **WebAPI** comes packed with a logout endpoint, so we want to use that in our **logout\(\)** method, read more about it [here](https://kcpelevennote.azurewebsites.net/swagger/ui/index#!/Account/Account_Logout).
 
 For users to logout of our application, we need to do a couple of things:
 
