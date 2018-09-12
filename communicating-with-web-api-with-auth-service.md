@@ -4,7 +4,7 @@ In this next section, we will be talking with a DotNet **WebAPI** built in .NET.
 
 Here is the link we will be using for our WebAPI endpoints:
 
-[http://kcpelevennote.azurewebsites.net/help](https://kcpelevennote.azurewebsites.net)
+[http://kcpelevennote.azurewebsites.net/Help](https://kcpelevennote.azurewebsites.net)
 
 What is a service? Great question, read more in the link [here](https://angular.io/guide/architecture#services). In this part of the build, we will create a service that will communicate with our WebAPI specifically.
 
