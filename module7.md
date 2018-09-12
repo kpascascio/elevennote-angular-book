@@ -10,7 +10,7 @@ The way that the WebAPI is created if to send request for our notes CRUD functio
 
 For us to get the **Bearer Token**, we need to send a request to the **/token** route with information — i.e. a user’s email, and password. 
 
-What type of request do we need to send to get our token back? Let’s look at the WebAPI documentation [here](http://kcpelevennoteapie.azurewebsites.net/swagger/ui/index#!/Auth/post_token).
+What type of request do we need to send to get our token back? Let’s look at the WebAPI documentation [here](https://kcpelevennote.azurewebsites.net/swagger/).
 
 Post type! We see in the link above that we need to send a string with a particular ‘**grant_type**’ then a user’s **email**, and **password** in the body of the request.
 
