@@ -9,7 +9,7 @@ ng g c components/note/note-delete --no-spec
 
 ## Step 1. Note Service 
 
-Like always we will start at the **NoteService**, we will create a **deleteNote(:id: number)** method, and we will pass in the id of the note that we would like to get rid of. Based on our docks [here](http://kcpelevennoteapie.azurewebsites.net/swagger/ui/index#!/Notes/Notes_Delete).
+Like always we will start at the **NoteService**, we will create a **deleteNote(:id: number)** method, and we will pass in the id of the note that we would like to get rid of. Based on our docks [here](https://kcpelevennote.azurewebsites.net/index#!/Notes/Notes_Delete).
 
 ![alt text](./images/0.014/00.PNG "Logo Title Text 1")
 

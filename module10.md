@@ -18,7 +18,7 @@ Now let’s inject our **HttpClient** class into our service and make a **getNot
 
 ![alt text](./images/0.010/01.PNG "Logo Title Text 1")
 
-Remember that if we are trying to retrieve notes from our [api](http://kcpelevennoteapie.azurewebsites.net/swagger/ui/index#!/Notes/Notes_Get), we need to be authorized. We were able to store our accesstoken in the localStorage so let’s grab that and also create a private method that gets our headers
+Remember that if we are trying to retrieve notes from our [api](https://kcpelevennote.azurewebsites.net/swagger/ui/index#!/Notes/Notes_Get), we need to be authorized. We were able to store our accesstoken in the localStorage so let’s grab that and also create a private method that gets our headers
 
 _*Don’t forget the imports! If you type out the code first you can press **ctrl .** and VSCode will try to bring in that class for you. _
 

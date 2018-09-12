@@ -4,7 +4,7 @@ In this next section, we will be talking with a DotNet **WebAPI**! Now there is 
 
 Here is the link we will be using for our WebAPI endpoints: 
 
-http://kcpelevennoteapie.azurewebsites.net/Help 
+https://kcpelevennote.azurewebsites.net/Help 
 
 What is a service? Great question, read mere in the link [here](https://angular.io/guide/architecture#services). We will continue assuming you know what the purpose of a **Service** is. 
 
@@ -59,7 +59,7 @@ What this method will do is take in an object that has 3 properties:
 - Password
 - confimPassword 
 
-Those  are the properties that we ask for when a user is registered. Also the properties that our **WebAPI** is [expecting](http://kcpelevennoteapie.azurewebsites.net/Help/Api/POST-api-Account-Register) to be inside of the request to be sent to the database.
+Those  are the properties that we ask for when a user is registered. Also the properties that our **WebAPI** is [expecting](https://kcpelevennote.azurewebsites.net/Help/Api/POST-api-Account-Register) to be inside of the request to be sent to the database.
 
 Then our register method will need to send our data using an HTTP request to our API. 
 
