@@ -4,7 +4,7 @@ In this next section, we will be talking with a DotNet **WebAPI** built in .NET.
 
 Here is the link we will be using for our WebAPI endpoints:
 
-[http://kcpelevennote.azurewebsites.net/Help](https://kcpelevennote.azurewebsites.net)
+[https://kcpelevennote.azurewebsites.net/Help](https://kcpelevennote.azurewebsites.net)
 
 What is a service? Great question, read more in the link [here](https://angular.io/guide/architecture#services). In this part of the build, we will create a service that will communicate with our WebAPI specifically.
 
@@ -49,15 +49,15 @@ Now that we have our service, let’s add a [nice little](https://media.giphy.co
 * password
 * confimPassword 
 
-Those are the properties that we ask for when a user is registered. Also the properties that our **WebAPI** is [expecting](http://kcpelevennoteapie.azurewebsites.net/Help/Api/POST-api-Account-Register) to be inside of the request to be sent to the database. Note: If you have a username property in your .NET app for signing up and signing in, you'll want to include that on your own.
+Those are the properties that we ask for when a user is registered. Also the properties that our **WebAPI** is [expecting](https://kcpelevennote.azurewebsites.net/Help/Api/POST-api-Account-Register) to be inside of the request to be sent to the database. Note: If you have a username property in your .NET app for signing up and signing in, you'll want to include that on your own.
 
 Our register method will need to send our data using an HTTP request to our API. We need to hold the never changing value of our API link. We will do that above the **@Injectable** decorator. Note, we will also start a register method under the constructor:
 
 ```javascript
-const Api_Url = ‘http://kcpelevennoteapie.azurewebsites.net’;
+const Api_Url = "https://kcpelevennote.azurewebsites.net";
 ```
 
-![Adding an Api\_Url variable and  the stub of a register method](.gitbook/assets/04%20%2810%29.PNG)
+![Adding an Api\_Url variable and  the stub of a register method](./images/09122018/071.PNG)
 
 ## Step 4. Building out the RegisterUser Model
 
@@ -77,7 +77,7 @@ Place this interface inside:
 
 Back in our **auth.service** we can now make sure the parameter that we are accepting will have everything that is inside of our **RegisterUser** model by applying the type to the parameter. Note that you will need to import the RegisterUser model\(line 2\). Ctrl + . will do this for you.
 
-![register Method](.gitbook/assets/06%20%285%29.PNG)
+![register Method](./images/09122018/072.PNG)
 
 ## Step 5. Import HttpClientModule to our Application
 
@@ -85,23 +85,21 @@ Angular comes pre-built with it’s own HTTP method, Read more [here](https://an
 
 We are going to include it within our application so that we can use it to communicate with our WebAPI.
 
-In our **app.module.ts file**, import **HttpModule**, on line 5.:
+In our **app.module.ts file**, import **HttpClientModule**, on line 5.:
 
-![](.gitbook/assets/image%20%287%29.png)
+![](./images/09122018/073.png)
 
 Then let’s include it in our **@NgModule** decorator, within the **imports** property. Right above the **ReactiveFormsModule**.
 
 Now we will be able to use it elsewhere in our application.
 
-![Add HttpModule to our Imports](.gitbook/assets/image%20%282%29.png)
+![Add HttpClientModule to our Imports](./images/09122018/074.png)
 
 ## Step 6. Injecting HTTP into our Service
 
 To be able to use all the properties and methods of **HttpClientModule**, we need to [“inject”](https://angular.io/guide/dependency-injection-pattern#the-dependency-injection-pattern) an instance of it inside of our **auth.service** constructor. Let’s navigate back to our **auth.service.ts** file.
 
 We create an instance of HTTP by assigning it to a private variable— we could use the accessor method of public as well, but since this variable will not be accessed to any other component we will keep it private.
-
-![Logo Title Text 1](.gitbook/assets/08.PNG)
 
 Then we can refer to it inside of our register method by using our keyword **“this”**.
 
@@ -113,7 +111,8 @@ Post!
 
 Now we can finish off with building our Post Request to our WebAPI.
 
-![Finishing the return for the register method](.gitbook/assets/capture.PNG)
+![Logo Title Text 1](./images/09122018/075.PNG)
+
 
 Notice the **back-ticks around the url**. These aren’t quotes!. They allow us to utilize **string interpolation**. So we can use our variable that we’ve created above in line without using the **+ operator**
 
@@ -133,7 +132,8 @@ Inside of the constructor is where that happens.
 
 Since we have an instance, we can include it into our method **onSubmit\(\)**.
 
-![Logo Title Text 1](.gitbook/assets/12%20%281%29.PNG)
+![Logo Title Text 1](./images/09122018/076.PNG)
 
-Try to register with the app now.
+Try to register with the app now, and look inside of the console in the browser and you should see you did it!.
 
+![Logo Title Text 1](./images/09122018/077.PNG)
