@@ -87,13 +87,13 @@ We are going to include it within our application so that we can use it to commu
 
 In our **app.module.ts file**, import **HttpClientModule**, on line 5.:
 
-![](./images/09122018/073.png)
+![](./images/09122018/073.PNG)
 
 Then let’s include it in our **@NgModule** decorator, within the **imports** property. Right above the **ReactiveFormsModule**.
 
 Now we will be able to use it elsewhere in our application.
 
-![Add HttpClientModule to our Imports](./images/09122018/074.png)
+![Add HttpClientModule to our Imports](./images/09122018/074.PNG)
 
 ## Step 6. Injecting HTTP into our Service
 
