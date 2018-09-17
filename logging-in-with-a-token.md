@@ -72,7 +72,7 @@ From the documentation that we have for our WebAPI, we can see the values that w
 
 Now that we have collected this template for are data we can use it in our **login** function \(**auth.service.ts**\). You should be able to press **ctrl + .** and it will bring in the import for you.
 
-## Step 4. After Registering, Logging in in our Controller!
+## Step 4. After Registering, Logging in our Controller!
 
 We have our login function built, now let’s implement it!
 
