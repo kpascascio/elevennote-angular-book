@@ -76,7 +76,7 @@ Then inside of the object that we pass to the group method we create 3 **FormCon
 
 Now that we’ve isolated our form creation to a method, let’s use that method to build us a form once the **constructor** first runs— by calling our method inside of the **constructor**.
 
-![Logo Title Text 1](.gitbook/assets/04%20%286%29.PNG)
+![Logo Title Text 1](./images/09122018/041.PNG)
 
 ## Step 4. Create the form in HTML with Material
 
