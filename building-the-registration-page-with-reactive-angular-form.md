@@ -122,7 +122,7 @@ In order for our data from the input boxes to be sent somewhere we need two thin
 
 Remember this line of code from our view:
 
-![Logo Title Text 1](.gitbook/assets/08%20%282%29.PNG)
+![Logo Title Text 1](./images/09122018/042.PNG)
 
 Inside of the **ngSubmit** for attribute, we set the value of a method called **onSubmit\(\)**.
 
@@ -132,7 +132,7 @@ What this does for us is that, once the form is submitted, the values that are c
 
 We don’t currently have that method in our controller, so let’s create it.
 
-![Logo Title Text 1](.gitbook/assets/10.PNG)
+![Logo Title Text 1](./images/09122018/043.PNG)
 
 In the **register.component.ts** file let’s create that form, then console log our member variable **\_registerForm.value** to see what we get in our view. For now we will call the component in the **app.component.html** file. Remember that we need to use the selector for the registration component with proper selector:
 
