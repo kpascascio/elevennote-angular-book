@@ -82,7 +82,7 @@ The beauty of the **register** method, it’s an **Observable**! This means that
 
 Do you remember which method we can call on an **Observable** to listen for an action?
 
-**Subscribe**! 
+**Subscribe**!
 
 ![Logo Title Text 1](.gitbook/assets/03.PNG)
 

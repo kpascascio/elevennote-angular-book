@@ -31,7 +31,7 @@ Navigate to where you would like to install this application through your termin
 We can now generate a new skeleton application with the Angular CLI. We will want to CD into the root of our project and run the following command:
 
 ```text
-ng new ElevenNote.WebAngular
+ng new elevenNoteAngular
 ```
 
 ![Logo Title Text 1](.gitbook/assets/02%20%2811%29.PNG)
@@ -40,12 +40,12 @@ ng new ElevenNote.WebAngular
 
 Again, patience is needed for our app to be scaffolded out.
 
-Once it’s finished, change your directory into your newly created folder **ElevenNote.WebAngular**.
+Once it’s finished, change your directory into your newly created folder e**levenNoteAngular**.
 
 Type:
 
 ```text
-cd ElevenNote.WebAngular
+cd elevenNoteAngular
 ```
 
 To run the application so that we can see the output in our browsers we use the command:

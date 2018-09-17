@@ -1,6 +1,6 @@
 # Part 7: Communicating with Web API with Auth Service
 
-In this next section, we will be talking with a DotNet **WebAPI** built in .NET. Before we use the our own APIs, we'll get some practice with  
+In this next section, we will be talking with a DotNet **WebAPI** built in .NET. Before we use the our own APIs, we'll get some practice with
 
 Here is the link we will be using for our WebAPI endpoints:
 
@@ -43,7 +43,7 @@ Well, since in an Angular project can have multiple modules, Angular will not as
 
 ## Step 3. Building Register Method then Making request using the built in HTTP Module
 
-Now that we have our service, let’s add a [nice little](https://media.giphy.com/media/rYEAkYihZsyWs/giphy.gif) register method.  What this method will do is take in an object that has 3 properties:
+Now that we have our service, let’s add a [nice little](https://media.giphy.com/media/rYEAkYihZsyWs/giphy.gif) register method. What this method will do is take in an object that has 3 properties:
 
 * email
 * password
@@ -57,7 +57,7 @@ Our register method will need to send our data using an HTTP request to our API.
 const Api_Url = "https://kcpelevennote.azurewebsites.net";
 ```
 
-![Adding an Api\_Url variable and  the stub of a register method](./images/09122018/071.PNG)
+![Adding an Api\_Url variable and the stub of a register method](.gitbook/assets/071.PNG)
 
 ## Step 4. Building out the RegisterUser Model
 
@@ -65,9 +65,9 @@ Create a folder within the **app folder** called **models:**
 
 ![Add a folder](.gitbook/assets/image%20%289%29.png)
 
-Inside of that file we are going to create a file called **RegisterUser.ts**. Note again: if you are needing a username variable to log into an app other than ElevenNote, you'll need to add that here. 
+Inside of that file we are going to create a file called **RegisterUser.ts**. Note again: if you are needing a username variable to log into an app other than ElevenNote, you'll need to add that here.
 
-Right click on the new models folder and choose **add file.** 
+Right click on the new models folder and choose **add file.**
 
 Call it **RegisterUser.ts.**
 
@@ -77,7 +77,7 @@ Place this interface inside:
 
 Back in our **auth.service** we can now make sure the parameter that we are accepting will have everything that is inside of our **RegisterUser** model by applying the type to the parameter. Note that you will need to import the RegisterUser model\(line 2\). Ctrl + . will do this for you.
 
-![register Method](./images/09122018/072.PNG)
+![register Method](.gitbook/assets/072.PNG)
 
 ## Step 5. Import HttpClientModule to our Application
 
@@ -87,13 +87,13 @@ We are going to include it within our application so that we can use it to commu
 
 In our **app.module.ts file**, import **HttpClientModule**, on line 5.:
 
-![](./images/09122018/073.PNG)
+![](.gitbook/assets/073.PNG)
 
 Then let’s include it in our **@NgModule** decorator, within the **imports** property. Right above the **ReactiveFormsModule**.
 
 Now we will be able to use it elsewhere in our application.
 
-![Add HttpClientModule to our Imports](./images/09122018/074.PNG)
+![Add HttpClientModule to our Imports](.gitbook/assets/074.PNG)
 
 ## Step 6. Injecting HTTP into our Service
 
@@ -111,12 +111,9 @@ Post!
 
 Now we can finish off with building our Post Request to our WebAPI.
 
-![Logo Title Text 1](./images/09122018/075.PNG)
-
+![Logo Title Text 1](.gitbook/assets/075.PNG)
 
 Notice the **back-ticks around the url**. These aren’t quotes!. They allow us to utilize **string interpolation**. So we can use our variable that we’ve created above in line without using the **+ operator**
-
-
 
 ## Step 7. Using our Register Method in our Register Controller
 
@@ -132,8 +129,9 @@ Inside of the constructor is where that happens.
 
 Since we have an instance, we can include it into our method **onSubmit\(\)**.
 
-![Logo Title Text 1](./images/09122018/076.PNG)
+![Logo Title Text 1](.gitbook/assets/076.PNG)
 
 Try to register with the app now, and look inside of the console in the browser and you should see you did it!.
 
-![Logo Title Text 1](./images/09122018/077.PNG)
+![Logo Title Text 1](.gitbook/assets/077.PNG)
+

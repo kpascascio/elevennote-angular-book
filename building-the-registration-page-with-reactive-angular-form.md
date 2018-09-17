@@ -76,7 +76,7 @@ Then inside of the object that we pass to the group method we create 3 **FormCon
 
 Now that we’ve isolated our form creation to a method, let’s use that method to build us a form once the **constructor** first runs— by calling our method inside of the **constructor**.
 
-![Logo Title Text 1](./images/09122018/041.PNG)
+![Logo Title Text 1](.gitbook/assets/041.PNG)
 
 ## Step 4. Create the form in HTML with Material
 
@@ -122,7 +122,7 @@ In order for our data from the input boxes to be sent somewhere we need two thin
 
 Remember this line of code from our view:
 
-![Logo Title Text 1](./images/09122018/042.PNG)
+![Logo Title Text 1](.gitbook/assets/042.PNG)
 
 Inside of the **ngSubmit** for attribute, we set the value of a method called **onSubmit\(\)**.
 
@@ -132,7 +132,7 @@ What this does for us is that, once the form is submitted, the values that are c
 
 We don’t currently have that method in our controller, so let’s create it.
 
-![Logo Title Text 1](./images/09122018/043.PNG)
+![Logo Title Text 1](.gitbook/assets/043.PNG)
 
 In the **register.component.ts** file let’s create that form, then console log our member variable **\_registerForm.value** to see what we get in our view. For now we will call the component in the **app.component.html** file. Remember that we need to use the selector for the registration component with proper selector:
 
@@ -142,7 +142,7 @@ Then, when we run ng-serve we should see the form under the navbar:
 
 ![Logo Title Text 1](.gitbook/assets/11%20%281%29.PNG)
 
-Go ahead and enter some data, like in the screenshot above. Then, open Chrome Tools by using ctrl + shift + i. 
+Go ahead and enter some data, like in the screenshot above. Then, open Chrome Tools by using ctrl + shift + i.
 
 Click on the console tab.
 
