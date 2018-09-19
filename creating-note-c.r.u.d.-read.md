@@ -5,7 +5,7 @@ In this module we need to read one individual note. Let’s make that happen. Le
 Type
 
 ```text
-ng g c components/note-detail --no-spec
+ng g c components/note/note-detail --no-spec
 ```
 
 ## Step 1. Note Service
