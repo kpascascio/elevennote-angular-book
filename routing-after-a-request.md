@@ -28,7 +28,7 @@ We are going to make use of **Angular’s HttpHeaders** class that is apart of o
 
 First we need to import it next to our **HttpClient**,
 
-![Logo Title Text 1](.gitbook/assets/07%20%283%29.PNG)
+![Logo Title Text 1](.gitbook/assets/am-sectionNine-imports.PNG)
 
 ![Logo Title Text 1](.gitbook/assets/06%20%282%29.PNG)
 
